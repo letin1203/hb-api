@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var cors = require('cors');
 
-mongoose.connect('mongodb://localhost/hb', {
+mongoose.connect('mongodb://heroku_53tdn22s:abcd@1234@ds147684.mlab.com:47684/heroku_53tdn22s', {
     promiseLibrary: require('bluebird'),
     useNewUrlParser: true,
     useUnifiedTopology: true,
