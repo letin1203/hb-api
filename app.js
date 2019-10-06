@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost/hb', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
-}).then(() =>  console.log('connection successful'))
+}).then(() =>  console.log('connection successful!'))
   .catch((err) => console.error(err));
 
 var indexRouter = require('./routes/index');
