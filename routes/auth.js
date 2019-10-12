@@ -40,7 +40,7 @@ router.post('/login', function(req, res) {
           // if user is found and password is right create a token
           var token = jwt.sign(user.toJSON(), config.secret);
           // return the information including token as JSON
-          res.json({success: true, token: 'JWT ' + token, user: user});
+          res.json({success: true, token: 'JWT ' + token, user: user, msg: 'Successful login.'});
         } else {
           res.status(401).send({success: false, msg: 'Authentication failed. Wrong password.'});
         }
